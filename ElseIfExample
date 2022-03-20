@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner keyboard = new Scanner (System.in);
+    int age;
+      System.out.println ("Welcome to Pub & Grill");
+      System.out.println ("Enter your age");
+      age = keyboard.nextInt ();
+      keyboard.nextLine ();
+    if (age >= 21)
+      {
+	System.out.println ("Enjoy your beer");
+      }
+    else if (age >= 16)
+      {
+	System.out.println ("Atleast you can drive");
+	System.out.println ("Have coke & chips");
+      }
+    else
+      {
+	System.out.println ("Here have a coke");
+      }
+    System.out.println ("Thanks for coming");
+
+  }
+}
