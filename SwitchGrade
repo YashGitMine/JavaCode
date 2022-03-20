@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner keyboard = new Scanner (System.in);
+    char grade;
+      System.out.println ("Enter your grade");
+      grade = keyboard.next ().charAt (0);
+    switch (grade)
+      {
+      case 'A':
+	System.out.println ("Great job");
+	break;
+	case 'B':System.out.println ("Good job");
+	break;
+	case 'C':System.out.println ("Can do better");
+	break;
+	case 'D':System.out.println ("Near to fail");
+	break;
+	case 'F':System.out.println ("You are failing");
+	break;
+	default:System.out.println ("Invalid grade!");
+      }
+
+  }
+}
