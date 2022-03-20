@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner keyboard = new Scanner (System.in);
+    char gender;
+    int age;
+      System.out.println ("Enter gender");
+      gender = keyboard.next ().charAt (0);
+      System.out.println ("Enter your age");
+      age = keyboard.nextInt ();
+      keyboard.nextLine ();
+    switch (gender)
+      {
+      case 'M':
+      case 'm':
+	if (age >= 19)
+	  {
+	    System.out.println ("You are eligible to join");
+	  }
+	else
+	  {
+	    System.out.println ("You are not eligible");
+	  }
+	break;
+      default:
+	System.out.println ("You are not eligible");
+	break;
+      }
+
+  }
+}
